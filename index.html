@@ -50,6 +50,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .opt-btn{background:rgba(255,255,255,0.03);border:1px solid rgba(240,236,228,0.1);border-radius:2px;padding:15px 18px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:300;line-height:1.55;color:var(--text-mid);text-align:left;cursor:pointer;transition:all 0.2s;position:relative;overflow:hidden;}
 .opt-btn::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--red);transition:width 0.2s;}
 .opt-btn:hover{border-color:rgba(231,76,60,0.4);color:var(--ink);background:rgba(192,57,43,0.08);}
+@media (hover: none) { .opt-btn:hover{border-color:transparent;color:inherit;background:transparent;} }
 .opt-btn.selected{border-color:var(--red-light);background:rgba(192,57,43,0.12);color:var(--ink);}
 .opt-btn.selected::before{width:3px}.opt-btn span{position:relative;z-index:1}
 #screen-interstitial{background:#000;justify-content:center;align-items:center;text-align:center;padding:48px 28px;}
